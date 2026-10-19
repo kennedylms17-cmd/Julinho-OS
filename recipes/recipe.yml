@@ -1,4 +1,3 @@
-```yaml
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 
@@ -22,9 +21,19 @@ modules:
         - lightdm
         - lightdm-gtk
         - dbus-x11
+        - xorg-x11-server-Xorg
+        - xorg-x11-drv-libinput
+        - mesa-dri-drivers
+        - network-manager-applet
+        - dejavu-sans-fonts
+
+  - type: script
+    snippets:
+      - systemctl set-default graphical.target
+      - useradd -m -G wheel kennedy
+      - echo 'kennedy:123456' | chpasswd
 
   - type: systemd
     system:
       enabled:
         - lightdm.service
-```
