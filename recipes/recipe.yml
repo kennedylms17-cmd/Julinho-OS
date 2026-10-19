@@ -28,5 +28,3 @@ modules:
       enabled:
         - lightdm.service
 
-  - type: signing
-
