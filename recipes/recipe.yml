@@ -3,7 +3,7 @@
 
 name: julinho-os
 description: Sistema Fedora imutavel minimo com XFCE
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/blue-build/base-images/fedora-base
 image-version: latest
 
 modules:
