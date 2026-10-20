@@ -34,7 +34,7 @@ jobs:
           iso_name: julinho-os.iso
 
       - name: Upload ISO
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: julinho-os-iso
           path: |
